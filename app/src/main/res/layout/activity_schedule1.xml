@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59FCCCF1"
+    tools:context=".Schedule1"
+    tools:layout_editor_absoluteX="-37dp"
+    tools:layout_editor_absoluteY="-221dp">
+
+    <ImageButton
+        android:id="@+id/btimg_home1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="home1"
+        android:onClick="onClickgohome"
+        android:scaleType="centerCrop"
+        android:src="@drawable/streltaitc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/savebt1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="btbacksch2"
+        android:onClick="Onclickgobcsch1"
+        android:rotation="180"
+        android:scaleType="centerCrop"
+        android:src="@drawable/savedata1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/btloadtext"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="strl1"
+        android:onClick="onClickntsch2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hombtic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/MondayLayout"
+        android:layout_width="354dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roud_loyat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/monpar1"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="1 пара"
+            android:inputType="text"
+            android:rotationX="0"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/monpar3"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="3 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monpar2" />
+
+        <EditText
+            android:id="@+id/monpar4"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="4 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monpar3" />
+
+        <EditText
+            android:id="@+id/monpar2"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="2 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monpar1" />
+
+        <TextView
+            android:id="@+id/monday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Понедельник"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/montxtpar1"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/monpar1"
+            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/monday1" />
+
+        <TextView
+            android:id="@+id/montxtpar2"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/monpar2"
+            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/montxtpar1" />
+
+        <TextView
+            android:id="@+id/montxtpar3"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/monpar3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/montxtpar2" />
+
+        <TextView
+            android:id="@+id/montxtpar4"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/monpar4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/montxtpar3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TuesdayLayout"
+        android:layout_width="354dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/roud_loyat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MondayLayout">
+
+        <TextView
+            android:id="@+id/tuesday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Вторник"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/tuepar1"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="1 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/tuepar2"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="2 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tuepar1" />
+
+        <EditText
+            android:id="@+id/tuepar3"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="3 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tuepar2" />
+
+        <EditText
+            android:id="@+id/tuepar4"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="4 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tuepar3" />
+
+        <TextView
+            android:id="@+id/tuetxtpar1"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tuesday1" />
+
+        <TextView
+            android:id="@+id/tuetxtpar2"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tuetxtpar1" />
+
+        <TextView
+            android:id="@+id/tuetxtpar3"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tuetxtpar2" />
+
+        <TextView
+            android:id="@+id/tuetxtpar4"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tuetxtpar3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/WednesdayLayout"
+        android:layout_width="354dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/roud_loyat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TuesdayLayout">
+
+        <TextView
+            android:id="@+id/wedtxtpar1"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wednesday1" />
+
+        <TextView
+            android:id="@+id/wedtxtpar2"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wedtxtpar1" />
+
+        <TextView
+            android:id="@+id/wedtxtpar3"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wedtxtpar2" />
+
+        <TextView
+            android:id="@+id/wedtxtpar4"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wedtxtpar3" />
+
+        <EditText
+            android:id="@+id/wedpar4"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="4 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wedpar3" />
+
+        <EditText
+            android:id="@+id/wedpar3"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="3 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wedpar2" />
+
+        <EditText
+            android:id="@+id/wedpar2"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="2 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wedpar1" />
+
+        <EditText
+            android:id="@+id/wedpar1"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="1 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wednesday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Среда"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

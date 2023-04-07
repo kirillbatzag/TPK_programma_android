@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59FCCCF1"
+    tools:context=".activity_schedule2">
+
+    <ImageButton
+        android:id="@+id/btimg_home2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="home1"
+        android:onClick="onClickgohome2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/streltaitc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bthmwkr2nt"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="btbacksch2"
+        android:onClick="Onclickgobcsch1"
+        android:rotation="180"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hombtic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/savebt2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="btbacksch2"
+        android:onClick="Onclickgobcsch1"
+        android:rotation="180"
+        android:scaleType="centerCrop"
+        android:src="@drawable/savedata1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageButton>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ThursdayLayout"
+        android:layout_width="354dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roud_loyat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/thupar4"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="4 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thupar3" />
+
+        <EditText
+            android:id="@+id/thupar3"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="3 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thupar2" />
+
+        <EditText
+            android:id="@+id/thupar2"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="2 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thupar1" />
+
+        <EditText
+            android:id="@+id/thupar1"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="1 пара"
+            android:inputType="text"
+            android:saveEnabled="false"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/thursday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Четверг"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/thutxtpar1"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thursday1" />
+
+        <TextView
+            android:id="@+id/thutxtpar2"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thutxtpar1" />
+
+        <TextView
+            android:id="@+id/thutxtpar3"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thutxtpar2" />
+
+        <TextView
+            android:id="@+id/thutxtpar4"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thutxtpar3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/FridayLayout"
+        android:layout_width="354dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/roud_loyat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ThursdayLayout">
+
+        <EditText
+            android:id="@+id/fripar4"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="4 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fripar3" />
+
+        <EditText
+            android:id="@+id/fripar3"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="3 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fripar2" />
+
+        <EditText
+            android:id="@+id/fripar2"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="2 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fripar1" />
+
+        <EditText
+            android:id="@+id/fripar1"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="1 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/friday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Пятница"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fritxtpar1"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/friday1" />
+
+        <TextView
+            android:id="@+id/fritxtpar2"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fritxtpar1" />
+
+        <TextView
+            android:id="@+id/fritxtpar3"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fritxtpar2" />
+
+        <TextView
+            android:id="@+id/fritxtpar4"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fritxtpar3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="354dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/roud_loyat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FridayLayout">
+
+        <EditText
+            android:id="@+id/satpar4"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="4 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/satpar3" />
+
+        <EditText
+            android:id="@+id/satpar3"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="3 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/satpar2" />
+
+        <EditText
+            android:id="@+id/satpar2"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="2 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/satpar1" />
+
+        <EditText
+            android:id="@+id/satpar1"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="1 пара"
+            android:inputType="text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/saturday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Суббота"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sattxtpar1"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saturday1" />
+
+        <TextView
+            android:id="@+id/sattxtpar2"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sattxtpar1" />
+
+        <TextView
+            android:id="@+id/sattxtpar3"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sattxtpar2" />
+
+        <TextView
+            android:id="@+id/sattxtpar4"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sattxtpar3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

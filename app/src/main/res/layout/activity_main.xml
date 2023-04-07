@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "#59FCCCF1"
+    android:outlineProvider="none"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="303dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="onClickHome1"
+        android:text="ДОМАШНЕЕ ЗАДАНИЕ"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/Schedule"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Schedule"
+        app:layout_constraintTop_toBottomOf="@+id/Schedule" />
+
+    <Button
+        android:id="@+id/Schedule"
+        android:layout_width="303dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="onClickShedule1"
+        android:text="Расписание"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
