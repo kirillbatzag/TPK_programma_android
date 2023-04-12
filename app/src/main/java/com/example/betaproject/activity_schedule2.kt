@@ -39,8 +39,8 @@ class activity_schedule2 : AppCompatActivity() {
         ///Четверг
         val txtthupar1 = bindingClasssch2.thupar1.text.toString()
         val txtthupar2 = bindingClasssch2.thupar2.text.toString()
-        val txtthupar3 = bindingClasssch2.thupar2.text.toString()
-        val txtthupar4 = bindingClasssch2.thupar2.text.toString()
+        val txtthupar3 = bindingClasssch2.thupar3.text.toString()
+        val txtthupar4 = bindingClasssch2.thupar4.text.toString()
 
         ///Пятница
         val txtfripar1 = bindingClasssch2.fripar1.text.toString()
